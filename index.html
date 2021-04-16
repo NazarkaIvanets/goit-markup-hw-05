@@ -13,7 +13,7 @@
 
     <body class="main-content">
         <!--Навигация-->
-        <header>
+        <header class="header-line">
             <div class="container">
                 <nav class="navigation">
                     <a class="logo-link link" href="./index.html"><span class="blue-logo">Web</span><span class="black-logo">Studio</span></a>
@@ -39,7 +39,7 @@
                         ЭФФЕКТИВНЫЕ РЕШЕНИЯ <br />
                         ДЛЯ ВАШЕГО БИЗНЕСА
                     </h1>
-                    <button type="button" class="order-button button">Заказать услугу</button>
+                    <button type="button" data-modal-open class="order-button button">Заказать услугу</button>
                 </div>
             </section>
 
@@ -69,19 +69,40 @@
             </section>
 
             <!--Чем мы занимаемся-->
-            <section class="what-we-do-section">
+            <section class="doing-section">
                 <div class="container">
-                    <div class="what-we-do-block">
+                    <div class="doing-block">
                         <h2 class="what-we-do-title title">Чем мы занимаемся</h2>
                         <ul class="about-list list grid">
                             <li class="grid-item about-item">
-                                <img src="./images/webstudio/about-1.jpg" alt="рисунок1" width="370" />
+                                <a href="">
+                                    <div class="doing-thumb">
+                                        <img src="./images/webstudio/about-1.jpg" alt="рисунок1" width="370" />
+                                        <div class="text-thumb">
+                                            <p class="text-decor-thumb">десктопные приложения</p>
+                                        </div>
+                                    </div>
+                                </a>
                             </li>
                             <li class="grid-item about-item">
-                                <img src="./images/webstudio/about-2.jpg" alt="рисунок2" width="370" />
+                                <a href="">
+                                    <div class="doing-thumb">
+                                        <img src="./images/webstudio/about-2.jpg" alt="рисунок2" width="370" />
+                                        <div class="text-thumb">
+                                            <p class="text-decor-thumb">мобильные приложения</p>
+                                        </div>
+                                    </div>
+                                </a>                               
                             </li>
                             <li class="grid-item about-item">
-                                <img src="./images/webstudio/about-3.jpg" alt="рисунок3" width="370" />
+                                <a href="">
+                                    <div class="doing-thumb">
+                                        <img src="./images/webstudio/about-3.jpg" alt="рисунок3" width="370" />
+                                        <div class="text-thumb">
+                                            <p class="text-decor-thumb">дизайнерские решения</p>
+                                        </div>
+                                    </div>
+                                </a>                                
                             </li>
                         </ul>
                     </div>
@@ -347,5 +368,11 @@
                 </div>
             </div>
         </footer>
+        <div class="backdrop is-hidden" data-modal>
+            <div class="modal modal-button">
+                <button class="btn-modal btn-icon-close" data-modal-close aria-label="Закрыть"></button>
+            </div>
+        </div>
+        <script src="./js/modal.js"></script>
     </body>
 </html>
